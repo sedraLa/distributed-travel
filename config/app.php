@@ -66,11 +66,13 @@ return [
         */
         App\Providers\AppServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
-
+        Illuminate\Auth\AuthServiceProvider::class,
+        App\Providers\AuthServiceProvider::class,
     ],
 
     'aliases' => Facade::defaultAliases()->merge([
         // 'Example' => App\Facades\Example::class,
+
     ])->toArray(),
 
 ];
